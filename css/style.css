@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 14px;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(243,243,243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.inst{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 50%;
+    min-width: 80vh;
+    
+}
+.inst-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    min-width: 80vh;
+}
+.inst-rodape{
+    display: flex;
+    align-items: center;
+    position:absolute;
+    justify-content: space-around;
+    bottom:0; 
+}
+.inst-interno{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    min-width: 80vh;
+}
+.insta-cel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.insta-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    min-width: 20rem;
+    max-width: 25rem;
+    
+}
+.bloco-branco{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    background:#fff;
+    width: 100%;
+    padding: 1.3rem 0;
+    margin-bottom: 1rem;
+    max-width: 25rem;
+}
+.bloco-branco:nth-child(1){
+    min-height: 19rem;
+}
+.bloco-branco p a{
+    color:  #0095f6;
+}
+.foto-perfil{
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 7rem;
+}
+.insta-logo{
+    height: 5rem;
+}
+.login-continue{
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+.login-sair{
+    color: #0095f6;
+    margin-top: 1rem;
+}
+.login-alterar{
+    color:#505050;
+}
+.bloco-transp{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.baixe-icon{
+    height: 3rem;
+}
+.baixe{
+    margin: auto;
+}
+.login-alterar{
+    text-align: center;
+    color:#505050;
+}
+.baixe{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.rodape{
+    margin-top: 1px;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    Position:relative;  
+    align-self:flex-end;
+    text-transform: uppercase;
+    font-size: 10px;
+    color:#505050;
+    font-weight: bolder;
+}
+.rodape a{
+    color:darkblue;
+    padding-left: 8px;
+    font-size: 11px;
+}
+@media (max-width:1024px){
+    .inst{
+        width: 90%;
+    }
+}
+@media (max-width:650px){
+    .inst{
+        width: 90%;
+    }
+    .insta-cel{
+        display: none;
+    }
+    .insta-login{
+        width: 100%;
+        max-width: none;
+    }
+    body{
+        background: #ffffff;
+    }
+    .bloco-branco{
+        border: none;
+    }
+}
+@media only screen and (min-width: 450px) and (max-width: 769px){
+    .inst-rodape{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position:relative;
+        justify-content: center;
+        bottom:0; 
+    }
+    .rodape{
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;  
+    }
+}
